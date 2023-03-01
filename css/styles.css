@@ -249,8 +249,8 @@ body {
     height: 32px;
 
     fill: var(--main-txt-cl);
-    /* background-color: transparent;
-    border: none; */
+    background-color: transparent;
+    border: none;
     padding: 0;
     margin-left: auto;
   }
@@ -1188,6 +1188,7 @@ body {
     display: block;
     margin-bottom: 48px;
     width: 353px;
+    font-style: normal;
   }
 
   .mobile-phone-num {
