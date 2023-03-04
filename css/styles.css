@@ -278,6 +278,14 @@ body {
     }
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-slogan {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/title/hero-img_mob@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
     .section-slogan {
         background-color: var(--secondary-bg-cl);
@@ -291,6 +299,14 @@ body {
         background-position: center;
         background-size: cover;
     }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-slogan {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/title/hero-img1_tab@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -309,9 +325,17 @@ body {
     }
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-slogan {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/title/hero-img2_desk@2x.jpg);
+  }
+}
+
 .slogan-title {
     font-size: 36px;
-    width: 320px;
+    max-width: 320px;
     line-height: calc(40 / 36);
     color: var(--white-txt-cl);
     letter-spacing: inherit;
@@ -325,7 +349,7 @@ body {
     .slogan-title {
         font-size: 56px;
         line-height: calc(60 / 56);
-        width: 494px;
+        max-width: 494px;
         margin-bottom: 40px; 
     }
 }
@@ -333,6 +357,7 @@ body {
 @media screen and (min-width: 1200px) {
     .slogan-title {
         margin-bottom: 48px; 
+        max-width: 496px;
     }
 }
 
@@ -968,7 +993,7 @@ body {
 }
 
 .modal {
-    width: 408px;
+    width: 95%;
     min-height: 576px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -981,6 +1006,12 @@ body {
     transform: translate(-50%, -50%);
 
     transition: transform 750ms ease;
+}
+
+@media screen and (min-width: 428px) {
+    .modal {
+        width: 392px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -1170,8 +1201,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding-left: 40px;
     padding-top: 80px;
     padding-bottom: 40px;
@@ -1181,7 +1212,7 @@ body {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
   }
-  
+ 
   .menu-container.is-open {
     transform: translateX(0);
   }
@@ -1218,7 +1249,7 @@ body {
   .mobile-address {
     display: block;
     margin-bottom: 48px;
-    width: 353px;
+    max-width: 353px;
     font-style: normal;
   }
 
@@ -1239,7 +1270,8 @@ body {
   }
 
   .mobile-socials-list {
-    width: 328px;
+    max-width: 328px;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
